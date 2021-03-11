@@ -1,0 +1,17 @@
+<div *ngIf="response">
+
+  <div class="card-class" *ngFor="let quote of response.results">
+
+    <div class="card">
+      <section class="card-content">{{ quote['content'] }}</section>
+      <section class="card-footer">~{{ quote['author'] }}</section>
+    </div>
+
+  </div>
+
+</div>
+<div *ngIf="!response">
+  <img width="300px" height="200px" src="../assets/error.svg" alt="">
+</div>
+
+<router-outlet></router-outlet>

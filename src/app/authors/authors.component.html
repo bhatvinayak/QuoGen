@@ -1,0 +1,14 @@
+<div *ngIf="response">
+
+  <div class="card-class">
+    <div class="card" *ngFor="let author of response.results" routerLink="quotesbyauthor">
+      <section class="card-content">{{ author['name'] }}</section>
+      <section class="card-footer">~{{ author['_id'] }}</section>
+    </div>
+  </div>
+
+
+
+</div>
+
+<router-outlet></router-outlet>

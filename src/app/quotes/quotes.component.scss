@@ -1,0 +1,26 @@
+.card {
+  background-color: #feeae6;
+  color: #442c2e;
+  border-radius: 10px;
+  padding-top: 10px ;
+  margin-top: 50px;
+  .card-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .card-footer{
+    padding-bottom: 20px;
+    margin: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+.card-class {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

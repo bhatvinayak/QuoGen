@@ -1,0 +1,8 @@
+<div *ngIf="response">
+  <p>{{response['count']}}</p>
+  <ul *ngFor="let tag of response.results">
+    <li>{{ tag['name'] }}</li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<div *ngIf="response">
+  <div class="card">
+    <section class="card-content">{{ response['content'] }}</section>
+    <section class="card-footer">~{{ response['author'] }}</section>
+  </div>
+</div>
+<div *ngIf="!response">
+  <img width="300px" height="200px" src="../assets/error.svg" alt="">
+</div>
+
+<div class="btn-div">
+
+<button (click)="generateQuote()" class="btn" >Get Another</button>
+</div>
